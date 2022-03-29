@@ -5,11 +5,12 @@ import BlackCard from "./components/BlackCard";
 import InterestShowcase from "./components/InterestShowcase";
 import Navbar from "./components/navbar/Navbar";
 import NormalShowcase from "./components/NormalShowcase";
-import TranspCard from "./components/TranspCard";
+import GlassCard from "./components/GlassCard";
 import SocialTab from "./components/SocialTab";
 import SkillTab from "./components/SkillTab";
 import "./component.css";
 import horseSunlight from "./images/horse-sunlight.jpg";
+import { chocopoke, sticker } from "./dataForHome";
 
 function Home() {
   return (
@@ -26,7 +27,7 @@ function Home() {
             <div className="heading">
               <h2>About me </h2>OHAYO! I’m Pichaipusit Kamsorn A Full stack
               developer (trying to be)
-            </div>{" "}
+            </div>
             <Typography variant="subtitle1">
               I love to adventure in the Tech business world because there're so
               many amazing things that drive me crazy, wanting to know more and
@@ -38,9 +39,9 @@ function Home() {
       <section className="xp-sect lightText">
         {/* TextShine */}
         <Grid container>
-          <TranspCard />
+          <GlassCard title="Mobile Game" image={chocopoke} color="yellow" />
           <NormalShowcase />
-          <TranspCard />
+          <GlassCard title="Line Stickers" image={sticker} color="green" />
         </Grid>
       </section>
       <section className="education-sect lightText">
