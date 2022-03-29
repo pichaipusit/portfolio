@@ -49,7 +49,7 @@ function Navbar() {
                               iActive === index ? "navGlow" : "navSleep"
                             }
                           >
-                            {navlink.icon}{" "}
+                            {navlink.icon}
                           </div>
                         }
                         aria-label="phone"
