@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
 .content {
   position: relative;
   display: flex;
@@ -28,6 +33,7 @@
 /* from react-tilt */
 .tilt {
   width: 320px;
+  height: 420px;
 }
 
 /* change header color  */

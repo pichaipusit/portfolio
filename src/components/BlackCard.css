@@ -1,0 +1,30 @@
+#black {
+  display: flex;
+  justify-content: center;
+}
+
+.magicCard {
+  background: rgb(6, 4, 24);
+  position: relative;
+  width: 300px;
+  height: 400px;
+  padding: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.lightOn {
+  box-shadow: 2px 0 10px #5ddcff, 0px 2px 10px #3c67e3, 0px 4px 20px #4e00c2;
+  transition: 0.5s;
+}
+
+.secretHidden {
+  color: rgb(177, 173, 173);
+}
+.secretReveal h2 {
+  color: rgb(104, 188, 245);
+  text-shadow: 0 0 10px rgb(75, 170, 233), 0 0 20px rgb(75, 104, 233);
+}

@@ -1,5 +1,14 @@
 import React, { useRef, useState } from "react";
-import { AppBar, Container, Tab, Tabs, Toolbar, Tooltip } from "@mui/material";
+import {
+  AppBar,
+  Container,
+  Tab,
+  Tabs,
+  Toolbar,
+  Tooltip,
+  useMediaQuery,
+  useTheme,
+} from "@mui/material";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
 import SchoolIcon from "@mui/icons-material/School";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
@@ -7,6 +16,9 @@ import "./Navbar.css";
 import { indicatorStyle } from "./NavbarStyle";
 
 function Navbar() {
+  const theme = useTheme();
+  let isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  console.log("✅", isMatch);
   const navLinksArr = [
     { icon: <WorkHistoryIcon fontSize="large" />, title: "Experience" },
     { icon: <SchoolIcon fontSize="large" />, title: "Education" },
