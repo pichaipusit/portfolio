@@ -1,6 +1,10 @@
 .App {
   text-align: center;
-  background: linear-gradient(rgb(31, 7, 44), rgb(13, 3, 20));
+  background: linear-gradient(
+    rgb(10, 17, 48),
+    rgb(32, 11, 80) 30%,
+    rgb(1, 2, 26)
+  );
 }
 
 .App-logo {
@@ -36,4 +40,39 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Horse image */
+.horseImg {
+  width: 90%;
+
+  border: none;
+  box-shadow: 0 0 10px black inset;
+}
+
+/* About me */
+.name {
+  color: var(--mid-blue);
+  font-weight: bold;
+}
+.role {
+  font-weight: bold;
+  color: var(--mid-blue);
+}
+.ceo {
+  background: linear-gradient(90deg, transparent, rgb(153, 35, 153));
+  padding: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 0.5rem;
+}
+
+.metal-img {
+  position: absolute;
+  width: 440px;
+  height: 540px;
+  mix-blend-mode: overlay;
+  transform: rotate(-45deg);
+  left: 40%;
+  top: 85%;
 }

@@ -28,12 +28,12 @@ function BlackCard() {
         <div className="secret-content" ref={secretRef}>
           {islightOn ? (
             <div className="secretReveal">
+              <h2>Generation Bootcamp!</h2>
               <img
                 width="100%"
                 src={genFriends}
                 alt="My friends at generation"
               />
-              <h2>Generation Bootcamp!</h2>
               <p>
                 I learn a lot from this, I found my weakness and a way to
                 improve it,
@@ -41,9 +41,9 @@ function BlackCard() {
               </p>
             </div>
           ) : (
-            <p className="secretHidden">
-              Don't click! <br /> it's a secret 👽
-            </p>
+            <h3 className="secretHidden">
+              Don't click! <br /> it's a secret 🤫
+            </h3>
           )}
         </div>
       </div>

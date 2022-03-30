@@ -4,8 +4,9 @@ import "./TextBlink.css";
 function TextBlink() {
   return (
     <div>
-      <div class="sign">
-        <span class="fast-flicker">Ex</span>perie<span class="flicker">n</span>
+      <div className="sign">
+        <span className="fast-flicker">Ex</span>perie
+        <span className="flicker">n</span>
         ce
       </div>
     </div>

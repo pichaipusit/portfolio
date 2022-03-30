@@ -1,8 +1,9 @@
 import React from "react";
+import "../component.css";
 
 function NormalShowcase({ img, title, info, year }) {
   return (
-    <div>
+    <div className="middle">
       <img width="100px" src={img} alt={title} />
       <div className="text-container">
         <h2>{title} </h2>

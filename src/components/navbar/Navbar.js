@@ -18,7 +18,7 @@ import { indicatorStyle } from "./NavbarStyle";
 function Navbar() {
   const theme = useTheme();
   let isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-  console.log("✅", isMatch);
+  // console.log("✅", isMatch);
   const navLinksArr = [
     { icon: <WorkHistoryIcon fontSize="large" />, title: "Experience" },
     { icon: <SchoolIcon fontSize="large" />, title: "Education" },
@@ -37,9 +37,10 @@ function Navbar() {
   const handleClick = (e) => {};
   return (
     <div>
-      <AppBar position="static" sx={{ background: "rgb(34, 8, 51)" }}>
+      <AppBar position="static" sx={{ background: "#0d0c26" }}>
         <Container>
           <Toolbar>
+            <h3>PORTFOLIO</h3>
             <div className="navlinks">
               <Tabs
                 textColor="#e56ff2"

@@ -12,52 +12,55 @@ import "./component.css";
 import horseSunlight from "./images/horse-sunlight.jpg";
 import { chocopoke, sticker, officemate, university } from "./dataForHome";
 import TextBlink from "./components/textAnimation/TextBlink";
+import AboutMe from "./AboutMe";
+import TextShine from "./components/textAnimation/TextShine";
+import "./App.css";
+import { useGlobalContext } from "./Context";
 
 function Home() {
+  const { isMatch } = useGlobalContext();
+
   return (
     <>
       <Navbar />
       <section className="about-sect lightText">
-        <Grid container>
+        <Grid container marginTop={5}>
           <Grid item xs={12} md={6}>
             <div className="img-contaier">
-              <img src={horseSunlight} alt="horse-sunlight" />
+              <img
+                className="horseImg"
+                src={horseSunlight}
+                alt="horse-sunlight"
+                style={{ maxWidth: `${isMatch ? "300px" : "380px"}` }}
+              />
             </div>
           </Grid>
           <Grid item xs={12} md={6}>
-            <div className="heading">
-              <h2>About me </h2>OHAYO! I'm Pichaipusit Kamsorn A Full stack
-              developer (trying to be)
-            </div>
-            <Typography variant="subtitle1">
-              I love to adventure in the Tech business world because there're so
-              many amazing things that drive me crazy, wanting to know more and
-              earn those skills to become a Breathtaking CEO!
-            </Typography>
+            <AboutMe />
           </Grid>
         </Grid>
       </section>
       <section className="xp-sect lightText">
         <TextBlink />
-        <Grid container spacing={2} marginTop={4}>
-          <Grid item xs={12} md={4}>
+        <Grid container spacing={2} marginTop={3}>
+          <Grid item xs={12} md={5}>
             <GlassCard title="Mobile Game" image={chocopoke} color="yellow" />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={2}>
             <NormalShowcase
               img={officemate}
               title="Furniture Salesman"
               info="Deliver the best! to customers"
             />
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={5}>
             <GlassCard title="Line Stickers" image={sticker} color="green" />
           </Grid>
         </Grid>
       </section>
       <section className="education-sect lightText">
-        {/* <TextBlink /> */}
-        <Grid container spacing={3} marginTop={4}>
+        <TextShine />
+        <Grid container spacing={3}>
           <Grid item xs={12} md={4}>
             <NormalShowcase
               img={university[0]}
