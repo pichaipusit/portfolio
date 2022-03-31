@@ -28,14 +28,15 @@ function BlackCard() {
         <div className="secret-content" ref={secretRef}>
           {islightOn ? (
             <div className="secretReveal">
-              <h2>Generation Bootcamp!</h2>
+              <h2 className="gen-title">Generation!</h2>
+              <h3 className="gen-title">Software Developer Bootcamp</h3>
               <img
                 width="100%"
                 src={genFriends}
                 alt="My friends at generation"
               />
               <p>
-                I learn a lot from this, I found my weakness and a way to
+                I learn a lot from this! I found my weakness and a way to
                 improve it,
                 <br /> thanks to all the instructors and my friends.
               </p>

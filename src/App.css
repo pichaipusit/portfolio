@@ -6,6 +6,32 @@
     rgb(1, 2, 26)
   );
 }
+:root {
+  --sunlight: rgb(240, 170, 105);
+}
+
+/* background img */
+.longband {
+  width: 400px;
+  height: 200px;
+  background-image: linear-gradient(rgb(52, 16, 86), rgb(24, 8, 62));
+  position: absolute;
+  left: -3em;
+  bottom: -40em;
+  transform: rotate(-45deg);
+  filter: blur(10px);
+  opacity: 0.6;
+  z-index: 0;
+  clip-path: polygon(0 33%, 56% 0, 100% 34%, 100% 99%, 0% 100%);
+}
+@media only screen and (max-width: 600px) {
+  .longband {
+    width: 200px;
+  }
+}
+/* background img */
+
+/* Set Each sect z-index */
 
 .App-logo {
   height: 40vmin;
@@ -45,19 +71,21 @@
 /* Horse image */
 .horseImg {
   width: 90%;
-
-  border: none;
-  box-shadow: 0 0 10px black inset;
+  position: relative;
+  border: 2px solid var(--sunlight);
+}
+.img-container {
+  position: relative;
 }
 
 /* About me */
 .name {
-  color: var(--mid-blue);
+  color: var(--sunlight);
   font-weight: bold;
 }
 .role {
   font-weight: bold;
-  color: var(--mid-blue);
+  color: var(--sunlight);
 }
 .ceo {
   background: linear-gradient(90deg, transparent, rgb(153, 35, 153));
@@ -67,12 +95,41 @@
   margin-left: 0.5rem;
 }
 
+/* BG img */
 .metal-img {
   position: absolute;
-  width: 440px;
-  height: 540px;
+
   mix-blend-mode: overlay;
   transform: rotate(-45deg);
   left: 40%;
   top: 85%;
+}
+.metal-md {
+  width: 440px;
+  height: 540px;
+}
+.metal-xs {
+  width: 140px;
+  height: 340px;
+}
+
+.bg-img {
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  right: 10em;
+  top: 17em;
+  mix-blend-mode: overlay;
+  opacity: 0.5;
+}
+
+/* Social contact */
+.contact-sect {
+  display: flex;
+  margin-left: 30px;
+  margin-top: 100px;
+  background: linear-gradient(transparent, rgb(33, 3, 55), rgb(10, 10, 10));
+  padding: 20px;
+  height: 60px;
+  align-items: center;
 }

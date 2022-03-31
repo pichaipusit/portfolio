@@ -3,8 +3,11 @@ import React from "react";
 import "./App.css";
 
 import metal from "./images/metal.png";
+import { useGlobalContext } from "./Context";
 
 function AboutMe() {
+  const { isMatch } = useGlobalContext();
+
   return (
     <>
       <div className="heading">
@@ -25,7 +28,11 @@ function AboutMe() {
         and earn those skills to become a
         <span className="ceo">Breathtaking CEO!</span>
       </Typography>
-      <img className="metal-img" src={metal} alt="metal" />
+      <img
+        className={`metal-img ${isMatch ? "metal-xs" : "metal-md"}`}
+        src={metal}
+        alt="metal"
+      />
     </>
   );
 }

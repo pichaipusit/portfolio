@@ -5,7 +5,7 @@ const AppContext = createContext();
 
 const AppProvider = ({ children }) => {
   const theme = useTheme();
-  let isMatch = useMediaQuery(theme.breakpoints.down("sm"));
+  let isMatch = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <AppContext.Provider value={{ isMatch }}>{children}</AppContext.Provider>

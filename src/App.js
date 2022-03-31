@@ -7,6 +7,7 @@ import { Container } from "@mui/material";
 function App() {
   return (
     <div className="App">
+      <span className="longband"></span>
       <Home />
     </div>
   );
