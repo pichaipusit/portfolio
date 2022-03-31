@@ -98,7 +98,7 @@
 /* BG img */
 .metal-img {
   position: absolute;
-
+  opacity: 0.6;
   mix-blend-mode: overlay;
   transform: rotate(-45deg);
   left: 40%;
