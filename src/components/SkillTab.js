@@ -11,7 +11,7 @@ function SkillTab() {
   const { isMatch } = useGlobalContext();
 
   return (
-    <div>
+    <div id="skills">
       <h2 style={{ marginTop: "160px", color: "#6da5d6" }}>My Skills</h2>
       <Grid container marginTop={4} justifyContent="center">
         <Grid item xs={12} md={4}>

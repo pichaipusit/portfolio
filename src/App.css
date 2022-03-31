@@ -98,11 +98,12 @@
 /* BG img */
 .metal-img {
   position: absolute;
-  opacity: 0.6;
+  opacity: 0.7;
   mix-blend-mode: overlay;
   transform: rotate(-45deg);
   left: 40%;
   top: 85%;
+  filter: blur(2px);
 }
 .metal-md {
   width: 440px;

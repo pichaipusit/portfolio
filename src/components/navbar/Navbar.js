@@ -6,7 +6,6 @@ import {
   Tabs,
   Toolbar,
   Tooltip,
-  useMediaQuery,
   useTheme,
 } from "@mui/material";
 import WorkHistoryIcon from "@mui/icons-material/WorkHistory";
@@ -14,18 +13,26 @@ import SchoolIcon from "@mui/icons-material/School";
 import VolunteerActivismIcon from "@mui/icons-material/VolunteerActivism";
 import "./Navbar.css";
 import { indicatorStyle } from "./NavbarStyle";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Navbar() {
-  const theme = useTheme();
-  let isMatch = useMediaQuery(theme.breakpoints.down("sm"));
-  // console.log("✅", isMatch);
   const navLinksArr = [
-    { icon: <WorkHistoryIcon fontSize="large" />, title: "Experience" },
-    { icon: <SchoolIcon fontSize="large" />, title: "Education" },
-    { icon: <VolunteerActivismIcon fontSize="large" />, title: "Interests" },
+    {
+      icon: <WorkHistoryIcon fontSize="large" />,
+      title: "Experience",
+      id: "#experience",
+    },
+    {
+      icon: <SchoolIcon fontSize="large" />,
+      title: "Education",
+      id: "#education",
+    },
+    {
+      icon: <VolunteerActivismIcon fontSize="large" />,
+      title: "skills",
+      id: "#skills",
+    },
   ];
-  const iconRef = useRef();
-  const [isGlow, setIsGlow] = useState(false);
   const [iActive, setIActive] = useState(0);
 
   const [value, setValue] = React.useState(0);
@@ -57,13 +64,15 @@ function Navbar() {
                       <Tab
                         onClick={() => setIActive(index)}
                         icon={
-                          <div
-                            className={
-                              iActive === index ? "navGlow" : "navSleep"
-                            }
-                          >
-                            {navlink.icon}
-                          </div>
+                          <AnchorLink href={navlink.id}>
+                            <div
+                              className={
+                                iActive === index ? "navGlow" : "navSleep"
+                              }
+                            >
+                              {navlink.icon}
+                            </div>
+                          </AnchorLink>
                         }
                         aria-label="phone"
                         sx={{

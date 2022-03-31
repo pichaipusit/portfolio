@@ -1,6 +1,5 @@
-import { Container, Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import React from "react";
-import AnchorLink from "react-anchor-link-smooth-scroll";
 import BlackCard from "./components/BlackCard";
 import Navbar from "./components/navbar/Navbar";
 import NormalShowcase from "./components/NormalShowcase";
@@ -50,9 +49,8 @@ function Home() {
       </section>
 
       {/* Experience */}
-      <section className="xp-sect lightText">
+      <section id="experience" className="xp-sect lightText">
         <TextBlink />
-
         <Grid container spacing={2} marginTop={3}>
           <Grid item xs={12} md={5}>
             <GlassCard title="Mobile Game" image={chocopoke} color="yellow" />
@@ -71,7 +69,7 @@ function Home() {
       </section>
 
       {/* Education */}
-      <section className="education-sect lightText">
+      <section id="education" className="education-sect lightText">
         <TextShine />
         <Grid container spacing={3}>
           <Grid item xs={12} md={4}>

@@ -9,7 +9,7 @@
 }
 
 .navSleep {
-  opacity: 0.25;
+  /* opacity: 0.25; */
   box-shadow: 0 0 0 pink;
 }
 .navGlow {
