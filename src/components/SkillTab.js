@@ -35,6 +35,15 @@ function SkillTab() {
             <h4 className="code-sample-title">
               Code sample of my Exercise tracker project
             </h4>
+            <a
+              href="https://darling-khapse-35c7d3.netlify.app/"
+              target="_blank"
+            >
+              Exercise tracker project
+            </a>
+            <a href="http://babe-jamming.surge.sh" target="_blank">
+              Jamming project
+            </a>
             <img width="300px" src={codeSample} alt="code-sample" />
           </div>
         </Grid>

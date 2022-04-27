@@ -26,14 +26,6 @@ body {
   text-transform: uppercase;
   font-size: 2em;
   color: var(--light-blue);
-  /* text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #ff65bd,
-    -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-    0 -0.5rem 1rem #ff2483, 0 0.5rem 1rem #ff2483;
-  animation: shine 2s forwards, flicker 3s infinite; */
-  text-shadow: 0 0 0.6rem var(--light-blue), 0 0 1.5rem var(--mid-blue),
-    -0.2rem 0.1rem 1rem var(--mid-blue), 0.2rem 0.1rem 1rem var(--mid-blue),
-    0 -0.5rem 1rem var(--dark-blue), 0 0.5rem 1rem var(--dark-blue);
-  animation: shine 2s forwards, flicker 3s infinite;
 }
 
 @keyframes blink {
@@ -42,12 +34,6 @@ body {
   36%,
   75% {
     color: var(--light-blue);
-    /* text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1rem #ff65bd,
-      -0.2rem 0.1rem 1rem #ff65bd, 0.2rem 0.1rem 1rem #ff65bd,
-      0 -0.5rem 1rem #ff2483, 0 0.5rem 1rem #ff2483; */
-    text-shadow: 0 0 0.6rem var(--light-blue), 0 0 1.5rem var(--mid-blue),
-      -0.2rem 0.1rem 1rem var(--mid-blue), 0.2rem 0.1rem 1rem var(--mid-blue),
-      0 -0.5rem 1rem var(--dark-blue), 0 0.5rem 1rem var(--dark-blue);
   }
   28%,
   33% {
@@ -62,11 +48,11 @@ body {
 }
 
 .flicker {
-  animation: shine 2s forwards, blink 3s 2s infinite;
+  /* animation: shine 2s forwards, blink 3s 2s infinite; */
 }
 
 .fast-flicker {
-  animation: shine 2s forwards, blink 10s 1s infinite;
+  /* animation: shine 2s forwards, blink 10s 1s infinite; */
 }
 
 @keyframes shine {

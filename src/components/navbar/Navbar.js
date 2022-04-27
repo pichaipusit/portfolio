@@ -18,17 +18,17 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 function Navbar() {
   const navLinksArr = [
     {
-      icon: <WorkHistoryIcon fontSize="large" />,
+      icon: <WorkHistoryIcon sx={{ color: "orange" }} />,
       title: "Experience",
       id: "#experience",
     },
     {
-      icon: <SchoolIcon fontSize="large" />,
+      icon: <SchoolIcon sx={{ color: "orange" }} />,
       title: "Education",
       id: "#education",
     },
     {
-      icon: <VolunteerActivismIcon fontSize="large" />,
+      icon: <VolunteerActivismIcon sx={{ color: "orange" }} />,
       title: "skills",
       id: "#skills",
     },
